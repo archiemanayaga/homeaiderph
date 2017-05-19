@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Site Properties -->
+    <title>Homepage - Semantic</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .divider{
+            position: relative;
+            width: 100%;
+            height: 1px;
+            background: #ddd;
+            margin: 30px auto;
+        }
+        .divider:after{
+            content: 'OR';
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 15px;
+            font-size: 12px;
+            color: #666;
+            background: #fff;
+            border:1px solid #f0f0f0;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -15px;
+            margin-left: -15px;
+            text-align: center;
+        }
+
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 70px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+        }
+
+        /* Add a hover effect if you want */
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        /* Set a specific color for each brand */
+
+        /* Facebook */
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        /* Google */
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><strong>HOME<span class="text-success">AIDER PH</span></strong></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <form class="navbar-form navbar-right" role="search">
+                    <strong>Don't have an account?</strong>
+                    <button type="button" class="btn btn-success">SIGN IN</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="col-sm-6 col-sm-offset-3">
+            <form class="form-horizontal">
+                <h4 class="text-center">Log in and get your prepared services</h4>
+                <div class="form-group">
+                    <div class="col-sm-offset-1 col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-1 col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-1 col-sm-10">
+                        <div class="checkbox pull-left">
+                            <label>
+                                <input type="checkbox"> Remember me
+                            </label>
+                        </div>
+                        <div class="pull-right" style="padding-top: 9px;">
+                            <a>Forgot password?</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-1 col-sm-10">
+                        <button type="submit" class="btn btn-success btn-block">LOG IN</button>
+                    </div>
+                </div>
+            </form>
+            <div class="divider"></div>
+            <div class="col-sm-offset-1 col-sm-10 text-center">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-google"></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
