@@ -45,10 +45,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                 <ul class="nav navbar-nav">
                     <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Find Work <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Find Aider <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li class="active"><a href="#">Find Work</a></li>
-                            <li><a href="#">Find Aider</a></li>
+                            <li class="active"><a href="#">Find Aider</a></li>
+                            <li><a href="#">Find Work</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -87,19 +87,15 @@
             <div class="col-sm-12">
                 <form class="form-horizontal">
                     <div class="form-group">
-                        <label class="col-sm-2 not-bold" style="font-size: 30px; padding-top: 0">Find Work</label>
+                        <label class="col-sm-2 not-bold" style="font-size: 30px; padding-top: 0">Find Aider</label>
                         <div class="col-sm-8">
                             <div class="input-group">
                               <input type="text" class="form-control input-md" placeholder="Search for...">
                               <span class="input-group-btn">
                                 <button class="btn btn-default btn-md" type="button">Go!</button>
+                                <button class="btn btn-default btn-md" type="button"><i class="fa fa-file-text-o"></i></button>
                               </span>
                             </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <a class="text-success" style="font-size: 17px;"><strong>Advance Search</strong></a>
                         </div>
                     </div>
                 </form>
@@ -107,33 +103,40 @@
             <div class="col-sm-12" style="margin-top: 30px;">
                 <div class="row">
                     <div class="col-sm-2">
+
+                        <label>Service Categories:</label>
                         <ul class="nav nav-pills nav-stacked">
-                            <li class="active"><a>My Job Feed</a></li>
-                            <li><a>Recent Searches</a></li>
-                            <li><a>Recommended</a></li>
+                            <li><a>All</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-8">
                         <div class="list-group">
                             <div class="list-group-item">
-                                <h3 class="not-bold">My Job Feed</h3>
+                                <h3 class="not-bold">Available Aider's</h3>
                             </div>
                             <div class="list-group-item">
-                                <div class="media">
+                                <div class="media" style="overflow: visible;">
                                   <div class="media-left">
                                     <a href="#">
                                       <img class="media-object img-responsive img-thumbnail" src="images/18601435_1545495542149450_1760376040_n.jpg" alt="pp" style="width: 64px; height: 64px;">
                                     </a>
                                   </div>
-                                  <div class="media-body">
+                                  <div class="media-body" style="overflow: inherit;">
                                     <h4 class="media-heading"><a class="text-success">Top aligned media</a> <small class="pull-right"><i class="fa fa-map-marker"></i> Banawa, Cebu</small></h4>
                                     <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                                     <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                    <div class="pull-left text-muted">
-                                        <i class="fa fa-tag"></i> Computer Repair
-                                    </div>
-                                    <div class="pull-right">
-                                        <a class="btn btn-success btn-sm">Accept</a>
+                                    <p class="text-muted">
+                                        <i class="fa fa-tag"></i> Computer Repair, Aircon Repair
+                                    </p>
+                                    <div class="text-right">
+                                        <div class="btn-group">
+                                            <button class="btn btn-success btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bookmark"></i> Book <span class="caret"></span></button>
+                                            <ul class="dropdown-menu">
+                                                <li><a>Computer Repair 500/1 Unit</a></li>
+                                                <li><a>Aircon Repair 7500/1 Unit</a></li>
+                                            </ul>
+                                        </div>
+                                        <a class="btn btn-info btn-sm"><i class="fa fa-user-o"></i> View Profile</a>
                                     </div>
                                   </div>
                                 </div>
@@ -149,12 +152,13 @@
                                     <h4 class="media-heading"><a class="text-success">Middle aligned media</a> <small class="pull-right"><i class="fa fa-map-marker"></i> Talamban, Cebu</small></h4>
                                     <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                                     <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                    <div class="pull-left text-muted">
+                                    <p class="text-muted">
                                         <i class="fa fa-tag"></i> Plumbing
-                                    </div>
-                                    <div class="pull-right">
-                                        <a class="btn btn-success btn-sm">Accept</a>
-                                    </div>
+                                    </p>
+                                    <p class="text-right">
+                                        <a class="btn btn-success btn-sm"><i class="fa fa-bookmark"></i> Book, 500/1 Day</a>
+                                        <a class="btn btn-info btn-sm"><i class="fa fa-user-o"></i> View Profile</a>
+                                    </p>
                                   </div>
                                 </div>
                             </div>
@@ -169,12 +173,13 @@
                                     <h4 class="media-heading"><a class="text-success">Bottom aligned media</a> <small class="pull-right"><i class="fa fa-map-marker"></i> Balamban, Cebu</small></h4>
                                     <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                                     <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                    <div class="pull-left text-muted">
+                                    <p class="text-muted">
                                         <i class="fa fa-tag"></i> Aircon Repair
-                                    </div>
-                                    <div class="pull-right">
-                                        <a class="btn btn-success btn-sm">Accept</a>
-                                    </div>
+                                    </p>
+                                    <p class="text-right">
+                                        <a class="btn btn-success btn-sm"><i class="fa fa-bookmark"></i> Book, 7500/1 unit</a>
+                                        <a class="btn btn-info btn-sm"><i class="fa fa-user-o"></i> View Profile</a>
+                                    </p>
                                   </div>
                                 </div>
                             </div>
